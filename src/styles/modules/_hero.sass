@@ -1,0 +1,47 @@
+.hero
+  background-color: #B5CCCC
+  background-image: linear-gradient(135deg, rgba(white, .1), rgba(black, .3))
+  height: 100vh
+  overflow: hidden
+  position: relative
+  text-align: center
+
+  &__image
+    border-radius: 50%
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25)
+    height: 192px
+    margin-bottom: 1rem
+    overflow: hidden
+    transform: scale(1)
+    transition: transform .1s ease-in-out
+    width: 192px
+    z-index: 2
+
+    &:hover
+      transform: scale(1.1)
+
+  &__title,
+  &__subtitle
+    margin-bottom: .25rem
+    margin-top: 0
+
+  &__title
+    font-size: 2rem
+    font-weight: 400
+    letter-spacing: .1rem
+    line-height: 1
+
+    span
+      opacity: .75
+
+  &__subtitle
+    border: solid rgba(white, .2)
+    border-width: 1px 0
+    color: rgba(white, .75)
+    font-size: 1.15rem
+    font-weight: 300
+
+@media (min-width: 600px)
+  .hero
+    &__title
+      font-size: 2.625rem
