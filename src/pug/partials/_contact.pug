@@ -1,0 +1,17 @@
+section.contact#contact
+  .container.container--narrow
+    h2.section-title Contact Me
+    p If you want to collaborate on an interesting project or you've got a suggestion for cooperation, I would be happy to answer all your questions.
+    
+    form.form#contact-form
+      label.form__label(for='name') Name
+      input.form__field#name(type='text' name='name' required minlength=3 placeholder='Your name')
+        
+      label.form__label(for='email') Email
+      input.form__field#email(type='email' name='email' required placeholder='Email address')
+
+      label.form__label(for='message') Message
+      textarea.form__field.form__field--full-width#message(required minlength=15 rows=4 name='message' placeholder='How can I help you?')
+
+      button.btn.form__btn(type='submit') Send message
+      #feedback

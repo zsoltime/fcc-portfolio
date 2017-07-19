@@ -1,0 +1,51 @@
+.form
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+  margin: -.5rem
+
+  &__label
+    border: 0
+    clip: rect(0 0 0 0)
+    height: 1px
+    margin: -1px
+    overflow: hidden
+    padding: 0
+    position: absolute
+    width: 1px
+
+  &__field
+    background-color: rgba(white, .5)
+    border: 2px solid rgba(black, .25)
+    border-radius: 2px
+    flex: 1 0 15rem
+    margin: .5rem
+    padding: .5rem
+    transition: border .2s ease-in-out
+
+    &:focus
+      border-color: $link-color
+      outline: thin dotted
+
+    &--full-width
+      flex-basis: calc(100% - 1rem)
+      margin-bottom: 1rem
+
+  &__btn
+    background-color: #009688
+    color: rgba(white, .9)
+    margin-bottom: 1rem
+
+.message
+  border: 1px solid rgba(black, .1)
+  border-radius: 2px
+  background-color: white
+  flex-basis: calc(100% - 1rem)
+  padding: 1rem
+  text-align: center
+
+  &--hidden
+    display: none
+
+  &--success
+    background-color: #c8e8c8
