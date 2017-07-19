@@ -1,0 +1,54 @@
+{
+  "name": "fcc-portfolio",
+  "version": "0.1.0",
+  "description": "FreeCodeCamp portfolio page",
+  "main": "",
+  "scripts": {
+    "build": "gulp build:dist",
+    "preview": "gulp preview:dist",
+    "start": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zsoltime/fcc-portfolio.git"
+  },
+  "keywords": [
+    "fcc",
+    "portfolio"
+  ],
+  "author": "Zsolt Meszaros",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zsoltime/fcc-portfolio/issues"
+  },
+  "homepage": "https://github.com/zsoltime/fcc-portfolio#readme",
+  "dependencies": {
+    "postcss-normalize": "^4.0.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^7.1.1",
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "babel-preset-env": "^1.6.0",
+    "browser-sync": "^2.18.12",
+    "del": "^3.0.0",
+    "eslint": "^4.3.0",
+    "eslint-config-airbnb-base": "^11.3.0",
+    "eslint-loader": "^1.9.0",
+    "eslint-plugin-import": "^2.7.0",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.4.2",
+    "gulp-imagemin": "^3.3.0",
+    "gulp-postcss": "^7.0.0",
+    "gulp-pug": "^3.3.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-rev": "^7.1.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-usemin": "^0.3.28",
+    "gulp-watch": "^4.3.11",
+    "webpack": "^2.7.0"
+  }
+}
