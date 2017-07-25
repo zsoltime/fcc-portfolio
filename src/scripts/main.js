@@ -1,5 +1,8 @@
+import addSmoothScroll from './modules/SmoothScroll';
 import Message from './modules/Message';
 import { handleSubmit } from './modules/Form';
+
+addSmoothScroll('.main-nav a');
 
 handleSubmit('#contact-form', (err, formData) => {
   if (err) {
