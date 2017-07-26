@@ -4,16 +4,6 @@
   justify-content: center
   margin: -.5rem
 
-  &__label
-    border: 0
-    clip: rect(0 0 0 0)
-    height: 1px
-    margin: -1px
-    overflow: hidden
-    padding: 0
-    position: absolute
-    width: 1px
-
   &__field
     background-color: rgba(white, .5)
     border: 2px solid rgba(black, .25)
@@ -32,7 +22,7 @@
       margin-bottom: 1rem
 
   &__btn
-    background-color: #009688
+    background-color: $link-color
     color: rgba(white, .9)
     margin-bottom: 1rem
 
@@ -48,4 +38,4 @@
     display: none
 
   &--success
-    background-color: #c8e8c8
+    background-color: desaturate($color-green, 15%)

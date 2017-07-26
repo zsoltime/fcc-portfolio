@@ -1,7 +1,7 @@
 .hero
-  background-color: #34353e
-  background-image: linear-gradient(to bottom, rgba(white, .1), rgba(black, .2))
-  color: rgba(white, .8)
+  background-color: darken(desaturate($color-blue, 10%), 10%)
+  background-image: linear-gradient(45deg, darken(desaturate($color-green, 10%), 10%), darken(desaturate($color-blue, 10%), 10%))
+  color: rgba(white, .9)
   height: 100vh
   overflow: hidden
   position: relative
@@ -9,7 +9,7 @@
 
   &__image
     border-radius: 50%
-    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25)
+    box-shadow: 1px 1px 2px rgba(black, .25)
     height: 192px
     margin-bottom: 1rem
     overflow: hidden
@@ -36,11 +36,12 @@
       opacity: .75
 
   &__subtitle
-    border: solid rgba(white, .2)
+    border: solid rgba(white, .25)
     border-width: 1px 0
     font-size: 1.15rem
     font-weight: 300
     margin-bottom: 2rem
+    padding-bottom: 2px
 
 @media (min-width: 600px)
   .hero
