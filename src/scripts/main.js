@@ -2,7 +2,7 @@ import addSmoothScroll from './modules/SmoothScroll';
 import Message from './modules/Message';
 import { handleSubmit } from './modules/Form';
 
-addSmoothScroll('.main-nav a');
+addSmoothScroll('a[href^="#"]');
 
 handleSubmit('#contact-form', (err, formData) => {
   if (err) {
