@@ -1,0 +1,10 @@
+include ../mixins/_meter.pug
+section.skills#skills
+  .container.container--narrow
+    h2.section-title My Skills
+    +meter('HTML5', 95)(class='skills__meter')
+    +meter('CSS3', 90)(class='skills__meter')
+    +meter('JavaScript', 85)(class='skills__meter')
+    +meter('Node.js', 75)(class='skills__meter')
+    +meter('PHP', 70)(class='skills__meter')
+    +meter('WordPress', 85)(class='skills__meter')

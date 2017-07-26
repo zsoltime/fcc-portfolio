@@ -1,0 +1,47 @@
+.skills__meter
+  margin-bottom: 1rem
+
+.meter
+  background: none
+  background-color: #fff
+  display: block
+  height: .375rem
+  margin: 0 auto
+  width: 100%
+
+  &__details
+    display: flex
+    font-size: .75rem
+    justify-content: space-between
+    margin-bottom: .25rem
+
+  &__value:after
+    content: '%'
+
+  &::-webkit-meter-bar
+    background: none
+    background-color: #fff
+
+  &::-webkit-meter-optimum-value
+    background-image: linear-gradient(90deg, #8ccf66 0, #739dd3 100%)
+    background-size: 100% 100%
+    transition: width .5s
+
+  &::-moz-meter-bar
+    background-image: linear-gradient(90deg, #8ccf66 0, #739dd3 100%)
+    background-size: 100% 100%
+
+  &__gauge
+    background-color: #fff
+    box-sizing: border-box
+    display: block
+    height: .375rem
+    width: 100%
+
+  &__gauge > span
+    background-color: #fff
+    background-image: linear-gradient(90deg, #8ccf66 0, #739dd3 100%)
+    background-size: 100% 100%
+    display: block
+    height: 100%
+    text-indent: -9999px

@@ -1,0 +1,10 @@
+mixin meter(label, val, min=0, max=100)
+  - var percent = ((val-min)/(max-min))*100
+  - var style = `width: ${percent}%`
+  div(class!=attributes.class)
+    .meter__details(style=style)
+      span.meter__label= label
+      span.meter__value= val
+    meter.meter(value=val min=min max=max)
+      .meter__gauge
+        span(style=style)= `${label} ${val}% out of ${max}%`
