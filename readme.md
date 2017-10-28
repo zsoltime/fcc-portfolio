@@ -1,6 +1,10 @@
-# FreeCodeCamp: Portfolio
+# freeCodeCamp: Portfolio
 
 This is my portfolio page for freeCodeCamp's second [basic front end challenge](https://www.freecodecamp.org/challenges/build-a-personal-portfolio-webpage). Demo is available [on my site](https://zsolti.co/fcc/portfolio/).
+
+[![Portfolio Page](/src/images/screenshot.jpg?raw=true&sanitize=true)](https://zsolti.co/fcc/portfolio/)
+
+Icons made by [UIUXER](https://www.flaticon.com/authors/uiuxer) from [flaticon.com](https://www.flaticon.com/) and licensed by [CC 3.0 BY](http://creativecommons.org/licenses/by/3.0/).
 
 ## User Stories
 
@@ -17,7 +21,7 @@ This is my portfolio page for freeCodeCamp's second [basic front end challenge](
 - [ESLint](https://github.com/eslint/eslint) linter with Airbnb's [base config](https://www.npmjs.com/package/eslint-config-airbnb-base)
 - [Pug](https://github.com/pugjs/pug) template engine
 - [Sass](http://sass-lang.com) with [PostCSS](https://github.com/postcss/postcss)' [Autoprefixer](https://github.com/postcss/autoprefixer)
-- [Particles.js](https://github.com/VincentGarreau/particles.js)
+- [Jump.js](https://github.com/callmecavs/jump.js) smooth scrolling library
 
 ## Install and Build
 
