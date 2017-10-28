@@ -1,8 +1,7 @@
 extends _layout.pug
-block title
-  title Zsolt Meszaros - FCC Portfolio Page
 block meta
-  meta(name='description', content='Check out my freeCodeCamp portfolio page')
+  include partials/_meta-data.pug
+  include partials/_meta.pug
 block content
   main
     include partials/_hero.pug
