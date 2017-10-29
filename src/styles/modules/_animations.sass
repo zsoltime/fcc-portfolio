@@ -1,0 +1,60 @@
+.anim
+  &.anim--delay-7
+    animation-delay: .75s
+
+  &.anim--delay-10
+    animation-delay: 1s
+
+  &.anim--delay-12
+    animation-delay: 1.2s
+
+  &.anim--delay-17
+    animation-delay: 1.7s
+
+  &.anim--delay-18
+    animation-delay: 1.8s
+
+  &.anim--delay-19
+    animation-delay: 1.9s
+
+  &.anim--delay-20
+    animation-delay: 2s
+
+  &--fade-in
+    animation: fadein .5s forwards cubic-bezier(0.75, 0.25, 0.5, 1.5)
+    opacity: 0
+
+  &--pop
+    animation: pop .5s forwards cubic-bezier(0.75, 0.25, 0.5, 1.5) .5s
+    opacity: 0
+    transform: scale(0.5)
+
+  &--slide-in
+    animation: slidein .5s forwards cubic-bezier(0.75, 0.25, 0.5, 1.5)
+    opacity: 0
+    transform: translateX(-1rem)
+
+@keyframes fadein
+  0
+    opacity: 0
+
+  100%
+    opacity: 1
+
+@keyframes pop
+  0
+    opacity: 0
+    transform: scale(0.5)
+
+  100%
+    opacity: 1
+    transform: scale(1)
+
+@keyframes slidein
+  0
+    opacity: 0
+    transform: translateX(-1rem)
+
+  100%
+    opacity: 1
+    transform: translateX(0)
