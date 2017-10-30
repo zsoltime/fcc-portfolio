@@ -1,8 +1,15 @@
-import addSmoothScroll from './modules/SmoothScroll';
+import { addSmoothScroll, scrollTo } from './modules/SmoothScroll';
 import Message from './modules/Message';
 import { handleSubmit } from './modules/Form';
 
+//
+// Add smooth scroll to every internal link
+//
 addSmoothScroll('a[href^="#"]');
+document.querySelector('.btn--contact')
+  .addEventListener('click', () => {
+    scrollTo('#contact');
+  });
 
 handleSubmit('#contact-form', (err, formData) => {
   if (err) {

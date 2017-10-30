@@ -1,6 +1,6 @@
 import jump from 'jump.js';
 
-function addSmoothScrolling(selector) {
+export function addSmoothScroll(selector) {
   document.querySelectorAll(selector)
     .forEach((link) => {
       link.addEventListener('click', (e) => {
@@ -11,4 +11,8 @@ function addSmoothScrolling(selector) {
     });
 }
 
-export default addSmoothScrolling;
+export function scrollTo(target) {
+  jump(document.querySelector(target), {
+    duration: 500,
+  });
+}
