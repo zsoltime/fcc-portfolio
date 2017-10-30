@@ -14,6 +14,16 @@ document.querySelector('.btn--contact')
   });
 
 //
+// Remove initial animation
+//
+document.querySelector('.social__item:last-of-type')
+  .addEventListener('animationend', () => {
+    document.querySelectorAll('.social__item').forEach((el) => {
+      el.classList.remove('anim', 'anim--pop');
+    });
+  });
+
+//
 // Reveal skills
 //
 const meters = document.querySelectorAll('meter');
