@@ -5,6 +5,6 @@ mixin meter(label, val, min=0, max=100)
     .meter__details(style=style)
       span.meter__label= label
       span.meter__value= val
-    meter.meter(value=val min=min max=max)
+    meter.meter(value=val min=min max=max data-val=val)
       .meter__gauge
         span(style=style)= `${label} ${val}% out of ${max}%`

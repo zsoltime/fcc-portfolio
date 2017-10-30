@@ -1,3 +1,5 @@
+import '../../node_modules/waypoints/lib/noframework.waypoints';
+
 import { addSmoothScroll, scrollTo } from './modules/SmoothScroll';
 import Message from './modules/Message';
 import { handleSubmit } from './modules/Form';
@@ -11,6 +13,38 @@ document.querySelector('.btn--contact')
     scrollTo('#contact');
   });
 
+//
+// Reveal skills
+//
+const meters = document.querySelectorAll('meter');
+const itemsToReveal = document.querySelectorAll('.skills');
+
+meters.forEach((meter) => {
+  meter.previousElementSibling.style.width = 0;
+  meter.value = 0;
+});
+
+itemsToReveal.forEach((item) => {
+  // eslint-disable-next-line no-new, no-undef
+  new Waypoint({
+    element: item,
+    handler: function handle() {
+      meters.forEach((meter, i) => {
+        setTimeout(() => {
+          const { val } = meter.dataset;
+          meter.previousElementSibling.style.width = `${val}%`;
+          meter.value = val;
+        }, i * 200);
+      });
+      this.destroy();
+    },
+    offset: '50%',
+  });
+});
+
+//
+// Handle form submit
+//
 handleSubmit('#contact-form', (err, formData) => {
   if (err) {
     return;

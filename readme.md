@@ -22,6 +22,7 @@ Icons made by [UIUXER](https://www.flaticon.com/authors/uiuxer) from [flaticon.c
 - [Pug](https://github.com/pugjs/pug) template engine
 - [Sass](http://sass-lang.com) with [PostCSS](https://github.com/postcss/postcss)' [Autoprefixer](https://github.com/postcss/autoprefixer)
 - [Jump.js](https://github.com/callmecavs/jump.js) smooth scrolling library
+- [Waypoints](https://github.com/imakewebthings/waypoints) library
 
 ## Install and Build
 

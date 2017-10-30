@@ -25,7 +25,8 @@
   "homepage": "https://github.com/zsoltime/fcc-portfolio#readme",
   "dependencies": {
     "jump.js": "^1.0.2",
-    "postcss-normalize": "^4.0.0"
+    "postcss-normalize": "^4.0.0",
+    "waypoints": "^4.0.1"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.1",
