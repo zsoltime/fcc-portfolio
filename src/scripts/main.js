@@ -27,29 +27,49 @@ document.querySelector('.social__item:last-of-type')
 // Reveal skills
 //
 const meters = document.querySelectorAll('meter');
-const itemsToReveal = document.querySelectorAll('.skills');
 
 meters.forEach((meter) => {
   meter.previousElementSibling.style.width = 0;
   meter.value = 0;
 });
 
-itemsToReveal.forEach((item) => {
-  // eslint-disable-next-line no-new, no-undef
-  new Waypoint({
-    element: item,
-    handler: function handle() {
-      meters.forEach((meter, i) => {
-        setTimeout(() => {
-          const { val } = meter.dataset;
-          meter.previousElementSibling.style.width = `${val}%`;
-          meter.value = val;
-        }, i * 200);
-      });
-      this.destroy();
-    },
-    offset: '50%',
-  });
+// eslint-disable-next-line no-new, no-undef
+new Waypoint({
+  element: document.getElementById('skills'),
+  handler: function handle() {
+    meters.forEach((meter, i) => {
+      setTimeout(() => {
+        const { val } = meter.dataset;
+        meter.previousElementSibling.style.width = `${val}%`;
+        meter.value = val;
+      }, i * 200);
+    });
+    this.destroy();
+  },
+  offset: '50%',
+});
+
+//
+// Reveal portfolio items
+//
+const portfolioItems = document.querySelectorAll('.portfolio__item');
+
+portfolioItems.forEach((item) => {
+  item.classList.add('reveal-item');
+});
+
+// eslint-disable-next-line no-new, no-undef
+new Waypoint({
+  element: document.getElementById('portfolio'),
+  handler: function handle() {
+    portfolioItems.forEach((item, i) => {
+      setTimeout(() => {
+        item.classList.add('reveal-item--visible');
+      }, i * 200);
+    });
+    this.destroy();
+  },
+  offset: '50%',
 });
 
 //
