@@ -6,6 +6,42 @@
     "Portfolio",
     "Contact"
   ],
+  "portfolio": [{
+    "title": "Designer Furniture",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing",
+    "img": "https://source.unsplash.com/Px3iBXV-4TU/420x250",
+    "img_retina": "https://source.unsplash.com/Px3iBXV-4TU/840x500"
+  }, {
+    "title": "Olla Boutique",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing",
+    "img": "https://source.unsplash.com/MNd-Rka1o0Q/420x250",
+    "img_retina": "https://source.unsplash.com/MNd-Rka1o0Q/840x500"
+  }, {
+    "title": "Restoracio Trio",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing",
+    "img": "https://source.unsplash.com/JVSgcV8_vb4/420x250",
+    "img_retina": "https://source.unsplash.com/JVSgcV8_vb4/840x500"
+  }, {
+    "title": "FriendFace",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing",
+    "img": "https://source.unsplash.com/ir5lIkVFqC4/420x250",
+    "img_retina": "https://source.unsplash.com/ir5lIkVFqC4/840x500"
+  }, {
+    "title": "Cryptocurrency Chart",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing",
+    "img": "https://source.unsplash.com/3HJH7QsQohM/420x250",
+    "img_retina": "https://source.unsplash.com/3HJH7QsQohM/840x500"
+  }, {
+    "title": "Dashboard UI",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing",
+    "img": "https://source.unsplash.com/hpjSkU2UYSU/420x250",
+    "img_retina": "https://source.unsplash.com/hpjSkU2UYSU/840x500"
+  }, {
+    "title": "ACME App",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing",
+    "img": "https://source.unsplash.com/mcSDtbWXUZU/420x250",
+    "img_retina": "https://source.unsplash.com/mcSDtbWXUZU/840x500"
+  }],
   "title": "Zsolt Meszaros - FCC Portfolio Page",
   "description": "Check out my freeCodeCamp portfolio page, a responsive, mobile first webpage without using any CSS framework",
   "url": "https://zsolti.co/fcc/portfolio/",
